@@ -1,4 +1,5 @@
-class LinkedList {
+package old;
+class SLinkedList {
      class Node {
           int data;
           Node next;
@@ -39,7 +40,7 @@ class LinkedList {
      }
 
      public static void main(String[] args) {
-          LinkedList list = new LinkedList();
+          SLinkedList list = new SLinkedList();
           list.display();
           list.addNode(19);
           list.addNode(10);
