@@ -38,7 +38,7 @@ public class doublyLinkedList {
 
      }
 
-     public void insetAfter(int nextTo, int data) {
+     public void insertAfter(int nextTo, int data) {
           Node newNode = new Node(data);
           Node temp = head;
 
