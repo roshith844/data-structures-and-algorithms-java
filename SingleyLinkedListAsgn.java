@@ -20,10 +20,10 @@ public class SingleyLinkedListAsgn {
             return;
         }
         Node temp = head;
+
         while (temp != null) {
             System.out.println(temp.data);
             temp = temp.next;
-
         }
     }
 
@@ -31,12 +31,10 @@ public class SingleyLinkedListAsgn {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
-
         } else {
             newNode.next = head;
             head = newNode;
         }
-
     }
 
     public void removeDuplicate() {
@@ -56,7 +54,7 @@ public class SingleyLinkedListAsgn {
         }
     }
 
-    public void insetBefore(int after, int data) {
+    public void insertBefore(int after, int data) {
         Node newNode = new Node(data);
         Node temp = head, prev = null;
 
@@ -116,7 +114,6 @@ public class SingleyLinkedListAsgn {
             return;
         }
         if (temp == tail) {
-
             tail = prev;
             tail.next = null;
         }
@@ -127,25 +124,21 @@ public class SingleyLinkedListAsgn {
         Node newNode = new Node(data);
         if (head == null) {
             head = newNode;
-
         } else {
             tail.next = newNode;
             tail = newNode;
         }
-
+       
     }
 
     public void addNode(int data) {
         Node newNode = new Node(data);
-
         if (head == null) {
             head = newNode;
-
         } else {
             tail.next = newNode;
         }
         tail = newNode;
-
     }
 
     public static void main(String[] args) {
