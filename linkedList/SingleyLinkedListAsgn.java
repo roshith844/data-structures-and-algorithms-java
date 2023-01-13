@@ -137,9 +137,13 @@ public class SingleyLinkedListAsgn {
         if (head == null) {
             head = newNode;
         } else {
-            tail.next = newNode;
+              /* Accessing last element here. 
+              Note: tail.next is not a Varriable but acessing the Node by using the reference provided on node 
+              */
+            tail.next = newNode; 
+           
         }
-        tail = newNode;
+        tail = newNode; // Tail varriable changes to newNode created
     }
 
     public static void main(String[] args) {
