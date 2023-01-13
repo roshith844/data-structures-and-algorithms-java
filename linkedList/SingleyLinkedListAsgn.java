@@ -138,7 +138,7 @@ public class SingleyLinkedListAsgn {
             head = newNode;
         } else {
               /* Accessing last element here. 
-              Note: tail.next is not a Varriable but acessing the Node by using the reference provided on node 
+              Note: tail.next is not a Varriable but acessing the Node by using the reference provided on Tail 
               */
             tail.next = newNode; 
            
